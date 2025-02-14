@@ -1,4 +1,4 @@
-const url = `http://localhost:8080/api/review`;
+const url = `https://review-backend-n7ui.onrender.com/api/review`;
 function showForm() {
   document.getElementById("reviewForm").style.display = "block";
 }
