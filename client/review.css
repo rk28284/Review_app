@@ -1,0 +1,128 @@
+
+  
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap; 
+    
+    gap: 10px; 
+    padding: 10px;
+  }
+  
+  .review-card {
+    flex: 0 0 calc(25% - 10px); 
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .review-card h4 {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  .review-card p {
+    margin: 5px 0;
+  }
+  
+  .review-card span.rating-badge {
+    font-size: 0.9em;
+    padding: 2px 5px;
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  
+  .star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-rating span {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .star-rating .selected {
+    color: gold;
+  }
+  
+  @media (max-width: 1024px) {
+    .review-card {
+      flex: 0 0 calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .reviews-container {
+      display: block;
+      overflow-y: auto;
+    }
+    .review-card {
+      flex: none;
+      width: 100%; 
+    }
+  }
+  
+  .cta {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .cta:hover {
+    transform: translateY(-2px);
+  }
+  
+  .form-container {
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .input-field {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .submit-btn:hover {
+    transform: translateY(-2px);
+  }
+  
